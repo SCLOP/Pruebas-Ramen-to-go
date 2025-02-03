@@ -106,7 +106,7 @@ main {
 }
 
 .whatsapp-button {
-    display: inline-block;
+    display: block; /* Para que el botón sea un bloque */
     background-color: #25D366;
     color: white;
     font-size: 16px;
@@ -114,8 +114,9 @@ main {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
+    margin: 20px auto; /* Centra el botón */
     text-align: center;
+    width: fit-content; /* Ajusta el ancho del botón a su contenido */
 }
 
 .whatsapp-button img {
