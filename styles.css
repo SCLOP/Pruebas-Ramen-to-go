@@ -163,12 +163,13 @@ footer {
     background: #ffcc00;
     padding: 10px;
     border-radius: 8px;
-    margin-top: 10px;
     font-weight: bold;
     color: #333;
-    margin: 20px auto; /* Centra el botón */
-    text-align: center;
-    width: fit-content;/* Ajusta el ancho del botón a su contenido */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
 }
 .submenu ul {
     list-style: none;
