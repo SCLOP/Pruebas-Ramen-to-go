@@ -88,7 +88,7 @@ main {
     justify-content: center;
 }
 
-.item {
+.item5 {
     text-align: center;
     background: white;
     padding: 15px;
@@ -148,12 +148,7 @@ footer {
 }
 
 
-.menu2 {
-     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.item4 {
+.item {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
