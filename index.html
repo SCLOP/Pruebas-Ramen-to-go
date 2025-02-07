@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen To Go</title>
+    <title>RAMEN TO GO</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .submenu {
+            display: none;
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .item:hover .submenu {
+            display: block;
+        }
+        .submenu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .submenu li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,96 +31,56 @@
     </header>
     <main>
         <section>
-            <h2>¡El mejor ramen, listo para llevar!</h2>
-            <h3>¿Antojo de algo picante, delicioso y rápido? ¡Tenemos justo lo que necesitas!</h3>
-            <h4>Disfruta de nuestros deliciosos sabores de ramen con el servicio de <strong>Ordene y Recoja</strong>. Perfecto para esos días en los que necesitas una explosión de sabor.</h4>
-        </section>
-        
-        <!-- Pestañas -->
-        <section class="tabs">
-            <div class="tab-links">
-                <button class="tab-button active" data-tab="ramen">Ramen</button>
-                <button class="tab-button" data-tab="toppings">Toppings</button>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane active" id="ramen">
-                    <h2>¡Prueba nuestros sabores!</h2>
-                    <div class="menu">
-                        <div class="item">
-                            <img src="raen-super-picante.jpeg" alt="Ramen Súper Picante">
-                            <h3>Ramen Súper Picante</h3>
-                            <p>🔥 Para los amantes del picante extremo.</p>
-                            <p><strong>Precio: $65</strong></p>
-                        </div>
-                        <div class="item">
-                            <img src="ramen-picante.jpeg" alt="Ramen Picor Medio">
-                            <h3>Ramen Carbonara Picante</h3>
-                            <p>🧀 Cremoso, cálido y lleno de sabor.</p>
-                            <p><strong>Precio: $65</strong></p>
-                        </div>
-                        <div class="item">
-                            <img src="frijol-dulce.jpg" alt="Ramen de Queso">
-                            <h3>Ramen de Beans</h3>
-                            <p>🤩 El equilibrio perfecto de sabor.</p>
-                            <p><strong>Precio: $65</strong></p>
-                        </div>
-                        <div class="item">
-                            <img src="buldak-bag.jpeg" alt="Bolsas de Buldak">
-                            <h3>Bolsas de Buldak</h3>
-                            <p>✨ Llévatelo a casa y prepáralo como quieras.</p>
-                            <p><strong>Precio: $50</strong></p>
-                        </div>
+            <h2>¡Prueba nuestros sabores!</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="ramen-super-picante.jpeg" alt="Ramen Súper Picante">
+                    <h3>Ramen Súper Picante</h3>
+                    <p>🔥 Para los amantes del picante extremo.</p>
+                    <p><strong>Precio: $65</strong></p>
+                    <div class="submenu">
+                        <h4>Toppings disponibles:</h4>
+                        <ul>
+                            <li>Huevo +$10</li>
+                            <li>Tofu +$15</li>
+                            <li>Chiles Extras +$5</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="tab-pane" id="toppings">
-                    <h2>Toppings para tu ramen</h2>
-                    <ul>
-                        <li>🥚 Huevo cocido - $10</li>
-                        <li>🍖 Carne de cerdo - $15</li>
-                        <li>🍄 Setas Shiitake - $12</li>
-                        <li>🥢 Algas Nori - $8</li>
-                        <li>🌶️ Chile picante - $5</li>
-                    </ul>
+                <div class="item">
+                    <img src="ramen-picante.jpeg" alt="Ramen Carbonara Picante">
+                    <h3>Ramen Carbonara Picante</h3>
+                    <p>🧀 Cremoso, cálido y lleno de sabor.</p>
+                    <p><strong>Precio: $65</strong></p>
+                    <div class="submenu">
+                        <h4>Toppings disponibles:</h4>
+                        <ul>
+                            <li>Huevo +$10</li>
+                            <li>Queso Extra +$12</li>
+                            <li>Alga Nori +$8</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="frijol-dulce.jpg" alt="Ramen de Frijol Dulce">
+                    <h3>Ramen de Frijol Dulce</h3>
+                    <p>🤩 El equilibrio perfecto de sabor.</p>
+                    <p><strong>Precio: $65</strong></p>
+                    <div class="submenu">
+                        <h4>Toppings disponibles:</h4>
+                        <ul>
+                            <li>Huevo +$10</li>
+                            <li>Brotes de Soya +$7</li>
+                            <li>Tofu +$15</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="cta-section">
-            <h2>¡No te quedes con el antojo!</h2>
-            <h4>Haz tu pedido ahora y disfruta del mejor ramen de la ciudad. 🍜 Perfecto para llevar o compartir con tus amigos y familia.</h4>
-            <h3>Haz clic en el botón para contactarnos por WhatsApp:</h3>
-            <a href="https://wa.me/526625084649" target="_blank" class="whatsapp-button">
-                <img src="whatsapp-icon.png" alt="WhatsApp" /> Pedir por WhatsApp
-            </a>
         </section>
     </main>
     <footer>
         <p>© 2025 Ramen To Go. Todos los derechos reservados.</p>
         <p><strong>Propiedad de Gil-Sclop</strong></p>
-        <img src="gilsclop.png" class="imagen">
     </footer>
-
-    <script>
-        // Script para manejar el cambio de pestañas
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabContents = document.querySelectorAll('.tab-pane');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const target = button.dataset.tab;
-
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                tabContents.forEach(content => {
-                    if (content.id === target) {
-                        content.classList.add('active');
-                    } else {
-                        content.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
