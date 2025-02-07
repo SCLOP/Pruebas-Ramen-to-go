@@ -145,12 +145,12 @@ footer {
 }
 
 
-.menu {
+.menu2 {
      display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.item {
+.item4 {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
