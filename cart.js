@@ -67,11 +67,16 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             const name = this.dataset.name;
             const price = parseFloat(this.dataset.price);
-            const image = this.dataset.image; // Obtener la URL de la imagen
+            const image = this.dataset.image; 
 
-            if (!name || isNaN(price) || !image) return;
+            if (!name || isNaN(price) || !image) {
+                alert("Error: Datos del producto inválidos.");
+                return;
+            }
 
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
             const existingItem = cart.find(item => item.name === name);
+
             if (existingItem) {
                 existingItem.quantity += 1;
             } else {
@@ -80,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             localStorage.setItem("cart", JSON.stringify(cart));
             alert(`${name} agregado al carrito.`);
+            renderCart(); 
         });
     });
 
